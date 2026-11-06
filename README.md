@@ -121,3 +121,17 @@ taking natively are the ones no plugin can do from outside:
    keeps H3 mods, Flux mods and anything later on the same footing.
 4. **Mods counted against H3's reference caps** (9 images, 3 videos, 12 files),
    which Showrunner currently validates only on files it can see.
+
+## License
+
+MIT (see `LICENSE`) — copyright (c) 2026 jedsdead.
+
+Every file here is original code written against WanGP's plugin API and
+Showrunner's own modules: Showrunner's JavaScript is imported at runtime
+rather than copied, and nothing from WanGP, Showrunner or the RefMods plugin
+is reproduced in it. WanGP itself stays under the WanGP Community License 2.0,
+which governs WanGP's code and not this plugin's.
+
+MIT is deliberate rather than incidental. The proposal above asks for parts of
+this to be taken into Showrunner proper, and permissive terms are what make
+that possible to accept.
