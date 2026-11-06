@@ -104,24 +104,6 @@ markup and re-attaches itself when Showrunner redraws. A Showrunner update
 that changes that markup would stop the picker appearing — the server side
 (cast field, render wiring, prompt labels) is unaffected.
 
-## For DeepBeepMeep
-
-This is a demonstration rather than a proposal for the UI. The parts worth
-taking natively are the ones no plugin can do from outside:
-
-1. **A cast member with a reference mod counts as having identity**, so the
-   planner neither warns about missing pictures nor generates a portrait that
-   then competes with the mod for `<Picture 1>`.
-2. **A per-shot reference map** exposed to the planner and the directing
-   skill — "`<Picture 1>` is Darth Siren" — so prompts name the right label by
-   construction instead of being corrected afterwards.
-3. **An identity-provider interface** (list what is available for a model,
-   and return a `custom_settings` fragment for a selection), so Showrunner
-   need not know what `h3_refmod_state` is or how its JSON is shaped. That
-   keeps H3 mods, Flux mods and anything later on the same footing.
-4. **Mods counted against H3's reference caps** (9 images, 3 videos, 12 files),
-   which Showrunner currently validates only on files it can see.
-
 ## License
 
 MIT (see `LICENSE`) — copyright (c) 2026 jedsdead.
@@ -132,6 +114,5 @@ rather than copied, and nothing from WanGP, Showrunner or the RefMods plugin
 is reproduced in it. WanGP itself stays under the WanGP Community License 2.0,
 which governs WanGP's code and not this plugin's.
 
-MIT is deliberate rather than incidental. The proposal above asks for parts of
-this to be taken into Showrunner proper, and permissive terms are what make
-that possible to accept.
+MIT is deliberate rather than incidental: permissive terms are what let any
+of this be reused or taken further by anyone, WanGP included.
