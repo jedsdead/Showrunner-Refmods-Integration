@@ -1,0 +1,12 @@
+{
+  "name": "Showrunner Refmods Integration",
+  "author": "jedsdead",
+  "version": "1.0.0",
+  "description": "Gives Showrunner's cast members a RefMod, applied to every shot that shows them, with its prompt label written in. Patches Showrunner from outside: nothing in its folder is changed, and removing this folder undoes it.",
+  "type": [
+    "extension"
+  ],
+  "date": "2026-11-06",
+  "wan2gp_version": "",
+  "url": "https://github.com/jedsdead/Showrunner-Refmods-Integration"
+}
